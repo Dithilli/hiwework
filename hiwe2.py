@@ -1,7 +1,5 @@
 """
-hiwe2.py is a "hello world" micro webservice that creates a Bottle micro-framework for web applications,
-and then responds with "Hello WeWork ang greetings from Name", where name is either default, or set by the user using
-an environment variable, or a command line argument.
+hiwe2.py is a "hello world" that runs in a Bottle webserver, and responds to a hit on it's only endpoint with "Hello WeWork and greetings from <Name>", where name is either default, or set by the user using an environment variable, or a command line argument.
 
 It also outputs to STDOUT a log that contains the date and time, the endpoint reached, and the http status code.
 """
@@ -9,7 +7,7 @@ It also outputs to STDOUT a log that contains the date and time, the endpoint re
 
 import os, sys
 from datetime import datetime
-from bottle import Bottle, route, run, response, request
+from bottle import route, run, response, request
 
 """
 Function namer first creates the variable name, and then checks to see if there's a command line argument setting name.
@@ -39,7 +37,7 @@ def logger():
     return printtime + " - Got a request to " + endpoint + " endpoint. Replied with code " + code
 
 """
-So, Bubble has terrible documentation. Should have used Flask. Thought about it, compared them, thought it would be
+So, Bubble has week documentation. Should have used Flask. Thought about it, compared them, thought it would be
 simpler for a small project to use Bubble. Learned my lesson. 
 """
 @route('/')

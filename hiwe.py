@@ -19,9 +19,9 @@ def namer():
     name = None
     if name == None and len(sys.argv) > 1:
         name = sys.argv[1]
-    if name == None:
+    elif name == None:
         name = os.getenv('HIWENAME')
-    if name == None:
+    elif name == None:
         name = "David"
     return name
 

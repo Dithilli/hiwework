@@ -20,7 +20,7 @@ def namer():
     if name == None and len(sys.argv) > 1:
         name = sys.argv[1]
     if name == None:
-        name = os.getenv('name')
+        name = os.getenv('HIWENAME')
     if name == None:
         name = "David"
     return name
@@ -36,10 +36,6 @@ def logger():
     endpoint = str(request.fullpath)
     return printtime + " - Got a request to " + endpoint + " endpoint. Replied with code " + code
 
-"""
-So, Bubble has week documentation. Should have used Flask. Thought about it, compared them, thought it would be
-simpler for a small project to use Bubble. Learned my lesson. 
-"""
 @route('/')
 def hi():
     name = namer()

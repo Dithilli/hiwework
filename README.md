@@ -1,22 +1,4 @@
-# HiWeWork
-Assignment for WeWork, Take Home Programming challenge
-
-Two Steps:
-Task 1: Build your App
-For your first task, you can use any language you are comfortable with . Your app should:
-1. Have a / endpoint that provides a simple “Hello World and greeting from <Name>”
-response.
-2. Be able to set the <Name> from a variable provided to the application using
-environment variable or a command line argument. Don’t forget to have a default for that
-variable (any string you want)
-3. Commit all your code to Github repository to share with us.
-4. Extra task : The application should also write a log to STDOUT, anytime someone is
-hitting an endpoint. The log format should be “<Time> Got a request to <endpoint>
-endpoint. Replied with <Code> code”, where <Time>, <endpoint> and <code> are
-variables to the time of the request, the endpoint trying to hit (i.e “/”) and the HTTP
-response code (i.e 200/404 etc.) respectively.
-
-Step One Challenges:
+Challenges:
 
 What is a / endpoint exactly? How do I implement this?
 

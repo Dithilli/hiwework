@@ -1,5 +1,6 @@
 """
 hiwe2.py is a "hello world" that runs in a Bottle webserver, and responds to a hit on it's only endpoint with "Hello WeWork and greetings from <Name>", where name is either default, or set by the user using an environment variable, or a command line argument.
+
 It also outputs to STDOUT a log that contains the date and time, the endpoint reached, and the http status code.
 """
 
@@ -15,6 +16,7 @@ Considered using ArgParse for inputting command line arguments, but this just di
 """
 def namer():
     name = None
+
     if name == None and len(sys.argv) > 1 and sys.argv[1] != None:
         name = sys.argv[1]
     elif name == None and os.getenv('HIWENAME') != None:
@@ -41,5 +43,7 @@ def hi():
     return "Hello WeWork and greetings from %s!" % name
 
 
+
+run(host='localhost', port=8080)
 
 run(host='0.0.0.0', port=8080)

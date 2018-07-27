@@ -10,7 +10,7 @@ from bottle import route, run, response, request
 
 """
 Function namer first creates the variable name, and then checks to see if there's a command line argument setting name.
-If not, it checks for an environment variable that sets the variable 'name'. If not, it sets the default to "David".
+If not, it checks for an environment variable that sets the variable 'HIWENAME'. If not, it sets the default to "David".
 Considered using ArgParse for inputting command line arguments, but this just didn't need it. 
 """
 def namer():

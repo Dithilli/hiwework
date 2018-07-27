@@ -6,7 +6,7 @@ Process:
 
   Consider tests that cover all these cases. Don’t just test for success. Test for odd successes, AND wild and not so wild failures. 
 
-  Check resources. Verify knowledge. Revisit experts and expert resources. Avoid invention when there’s 
+  Check resources. Verify knowledge. Revisit experts and expert resources. Avoid invention when there’s dependal, immediate solutions. If you think you're breaking new ground you're probably not. 
 
   Build answer – test to see if it meets minimum successes and avoids failures. Exceed minimums if easy/convenient/profitable. 
 

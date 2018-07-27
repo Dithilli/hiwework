@@ -1,4 +1,23 @@
-Challenges:
+Process:
+
+What are the desired results? Specifically? Ask, expand, and if necessary, educate asker so they can inform their own ask.
+
+What are the undesired results? Don’t just define success, define failure. Sometimes, not failing horribly is more important that succeeding wildly. 
+
+Consider tests that cover all these cases. Don’t just test for success. Test for odd successes, AND wild and not so wild failures. 
+
+Check resources. Verify knowledge. Revisit experts and expert resources. Avoid invention when there’s 
+
+Build answer – test to see if it meets minimum successes and avoids failures. Exceed minimums if easy/convenient/profitable. 
+
+Repeat. 
+
+Profit. 
+		
+
+
+
+Challenges and Unknowns:
 
 What is a / endpoint exactly? How do I implement this?
 

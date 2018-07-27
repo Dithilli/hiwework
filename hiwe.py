@@ -15,11 +15,11 @@ Considered using ArgParse for inputting command line arguments, but this just di
 """
 def namer():
     name = None
-    if name == None and len(sys.argv) > 1 and sys.argv[1] != None:
+    if len(sys.argv) > 1 and sys.argv[1] != None:
         name = sys.argv[1]
-    elif name == None and os.getenv('HIWENAME') != None:
+    elif os.getenv('HIWENAME') != None:
         name = os.getenv('HIWENAME')
-    elif name == None:
+    else:
         name = "David"
     return name
 
